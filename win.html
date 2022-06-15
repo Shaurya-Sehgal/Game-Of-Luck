@@ -19,7 +19,7 @@
         }
 
         div {
-            padding: 200px 0;            
+            padding: 200px 0;
             text-align: center;
         }
 
@@ -29,16 +29,28 @@
 
         button {
             font-family: Roboto Slab;
+            font-size: 17px;
             cursor: pointer;
             font-weight: 700;
-            background-color: orange;
+            background-color: rgb(0, 255, 170);
             transition: all 0.5s;
             border-radius: 20px;
             padding: 5px 8px;
         }
+
         button:hover {
-            font-size: 17px;
-            background-color: lime;
+            background-color: rgb(0, 255, 47);
+            font-size: 19px;
+        }
+
+        .back {
+            margin-top: 22px;
+            background-color: red;
+        }
+
+        .back:hover {
+            background-color: black;
+            color: red;
         }
     </style>
 </head>
@@ -46,8 +58,10 @@
 <body>
     <div>
         <h1>You are Lucky!</h1>
-        <a href="index.html">
-            <button>Play Again</button>
+        <button onclick="location.href = 'index.html'">Play Again</button>
+        <br>
+        <a href="https://shaurya-sehgal.github.io/glitchedgaming/">
+            <button class="back">Go Back To Glitched Games</button>
         </a>
     </div>
 </body>
